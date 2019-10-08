@@ -1,0 +1,16 @@
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Projeto.deps.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Projeto.runtimeconfig.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Projeto.runtimeconfig.dev.json
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Projeto.dll
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.csprojAssemblyReference.cache
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.RazorAssemblyInfo.cache
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.RazorAssemblyInfo.cs
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.AssemblyInfoInputs.cache
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.AssemblyInfo.cs
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.RazorTargetAssemblyInfo.cache
+C:\Users\akame\source\repos\Projeto\bin\Debug\netcoreapp2.2\Projeto.pdb
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.dll
+C:\Users\akame\source\repos\Projeto\obj\Debug\netcoreapp2.2\Projeto.pdb
