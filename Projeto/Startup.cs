@@ -11,9 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using playground.Models;
-using playground.Repositories;
-using playground.Services;
+using Projeto.Models;
+using Projeto.Repositories;
+using Projeto.Services;
 
 namespace Projeto
 {

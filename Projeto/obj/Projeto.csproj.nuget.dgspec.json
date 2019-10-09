@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akame\\source\\repos\\Projeto\\Projeto.csproj": {}
+    "C:\\Users\\suporte\\Desktop\\vitor\\AnalisePartidasNET\\Projeto\\Projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akame\\source\\repos\\Projeto\\Projeto.csproj": {
+    "C:\\Users\\suporte\\Desktop\\vitor\\AnalisePartidasNET\\Projeto\\Projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akame\\source\\repos\\Projeto\\Projeto.csproj",
+        "projectUniqueName": "C:\\Users\\suporte\\Desktop\\vitor\\AnalisePartidasNET\\Projeto\\Projeto.csproj",
         "projectName": "Projeto",
-        "projectPath": "C:\\Users\\akame\\source\\repos\\Projeto\\Projeto.csproj",
-        "packagesPath": "C:\\Users\\akame\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akame\\source\\repos\\Projeto\\obj\\",
+        "projectPath": "C:\\Users\\suporte\\Desktop\\vitor\\AnalisePartidasNET\\Projeto\\Projeto.csproj",
+        "packagesPath": "C:\\Users\\suporte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\suporte\\Desktop\\vitor\\AnalisePartidasNET\\Projeto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\akame\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\suporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

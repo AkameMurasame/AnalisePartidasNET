@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using playground.Models;
-using playground.Services;
+using Projeto.Models;
+using Projeto.Services;
 using System;
 using System.Collections.Generic;
 using System.Net.Mime;
@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace Projeto.Controllers
 {
     [Route("api/invocador")]
+    [Produces(MediaTypeNames.Application.Json)]
     public class InvocadorController : Controller
     {
         private readonly IInvocadorService _invocadorSerivice;
@@ -22,26 +23,61 @@ namespace Projeto.Controllers
 
         [HttpPost]
         [Consumes(MediaTypeNames.Application.Json)]
-        [Produces(MediaTypeNames.Application.Json)]
-        public Invocador insertInvocador(Invocador invocador)
+        //[ProducesResponseType(typeof(Invocador), StatusCodes.Status201Created)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public Invocador insertInvocador([FromBody] Invocador invocador)
         {
-            try
-            {
-                return _invocadorSerivice.inserirInvocador(invocador);
-            }
-            catch(Exception e)
-            {
-                _ = e.StackTrace;
-                return null;
-            }
+              return _invocadorSerivice.inserirInvocador(invocador);
         }
 
-        [HttpGet()]
-        [Produces(MediaTypeNames.Application.Json)]
-        public Invocador getInvocador(String nick)
+        [HttpGet]
+        [Route("/by-nick/{nick}")]
+        public ActionResult<Invocador> getInvocador(String nick)
         {
-            return _invocadorSerivice.getInvocador(nick);
+            Invocador invocador = _invocadorSerivice.getInvocador(nick);
+            if(invocador == null)
+            {
+                return NotFound();
+            }
+            return invocador;
         }
 
+        [HttpGet]
+        [Route("/by-id/{id}")]
+        public ActionResult<Invocador> getInvocador(int id)
+        {
+            Invocador invocador = _invocadorSerivice.GetInvocadorById(id);
+            if (invocador == null)
+            {
+                return NotFound();
+            }
+            return invocador;
+        }
+
+        [HttpGet]
+        public ActionResult<List<Invocador>> getAllInvocadores()
+        {
+            List<Invocador> invocadores = _invocadorSerivice.GetAllInvocadores();
+            if (invocadores == null)
+            {
+                return NotFound();
+            }
+            return invocadores;
+        }
+
+        [HttpPut]
+        public Invocador updateInvocador([FromBody] Invocador invocador)
+        {
+            Invocador invocador = _invocadorSerivice.UpdateInvocador(invocador);
+            return invocador;
+        }
+
+        [HttpDelete]
+        [Route("/delete/{id}")]
+        public boolean deleteInvocador(int id)
+        {
+            boolean result = _invocadorSerivice.DeleteInvocador(invocador.id);
+            return result;
+        }
     }
 }

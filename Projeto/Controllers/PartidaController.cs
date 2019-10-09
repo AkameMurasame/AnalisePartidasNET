@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using playground.Models;
-using playground.Services;
+using Projeto.Models;
+using Projeto.Services;
 using System;
 using System.Collections.Generic;
 using System.Net.Mime;

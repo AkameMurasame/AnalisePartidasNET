@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace playground.Models
+namespace Projeto.Models
 {
     public class BaseRepository
     {

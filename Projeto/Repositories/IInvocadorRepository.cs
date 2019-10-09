@@ -8,8 +8,17 @@ namespace playground.Repositories
 {
     public interface IInvocadorRepository
     {
-        Invocador getInvocador(String nick);
+        public Invocador getInvocador(String nick);
 
-        Invocador saveInvocador(Invocador invocador);
+        public Invocador saveInvocador(Invocador invocador);
+
+        public List<Invocador> GetAllInvocadores();
+
+        public Invocador UpdateInvocador(Invocador invocador);
+
+        public boolean DeleteInvocador(int id);
+
+        public Invocador GetInvocadorById(int id);
+        
     }
 }

@@ -5,14 +5,18 @@ using System.Threading.Tasks;
 
 namespace Projeto.Models
 {
-    public class Invocador
+        public class Invocador
     {
-       
-    public String accountId { get; set; }
+        public class Invocador()
+        {
+            partidas = new List<Partida>();
+        }
 
+        [key]
+        public String accountId { get; set; }
+        
         public String nick { get; set; }
-
-        public List<Partida> partidas { get; set; }
-
+        
+        public ICollection<Partida> partidas { get; set; }
     }
 }
